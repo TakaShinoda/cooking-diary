@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Posts } from "./components/Posts";
+import { RecipeList } from "./components/RecipeList";
 import "./App.css";
 
 export const App = () => {
@@ -23,6 +24,9 @@ export const App = () => {
           <Switch>
             <Route path="/Posts">
               <Posts />
+            </Route>
+            <Route path="/RecipeList">
+              <RecipeList />
             </Route>
           </Switch>
         </div>
